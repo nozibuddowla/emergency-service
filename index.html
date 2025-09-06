@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Emergency Hotline</title>
+
+    <link rel="shortcut icon" href="./assets/logo-dark.png" type="image/x-icon">
+
+    <!-- daisy UI cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+    <!-- tailwind cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="container mx-auto">
+        <!-- Navbar -->
+        <div class="navbar bg-white/90 shadow-2xl">
+            <!-- Left: Logo & Name -->
+            <div class="flex-1">
+                <a class="flex items-center space-x-2">
+                    <img src="./assets/logo.png" alt="logo" class="w-12">
+                    <span class="text-xl font-bold text-[#006747] leading-tight">Emergency <br> Service</span>
+                </a>
+            </div>
+
+            <!-- Right (Large screens) -->
+            <div class="hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 space-x-2">
+                    <!-- Heart -->
+                    <li>
+                        <div class="flex items-center space-x-1 rounded-[50px] bg-[#41ff6b1a] p-2">
+                            <span class="font-semibold">0</span>
+                            <img src="./assets/heart.png" alt="" class="w-7">
+                        </div>
+                    </li>
+                    <!-- Coin -->
+                    <li>
+                        <div class="flex items-center space-x-1 rounded-[50px] bg-[#41ff6b1a] p-2">
+                            <span class="font-semibold">100</span>
+                            <img src="./assets/coin.png" alt="" class="w-7">
+                        </div>
+                    </li>
+                    <!-- Copy Count -->
+                    <li><button class=" btn px-9 py-3 bg-[#00a63e] rounded-[50px] text-white"> <span>0</span> Copy</button></li>
+                </ul>
+            </div>
+
+            <!-- Right (Mobile) -->
+            <div class="dropdown dropdown-end lg:hidden">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /> </svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box w-52">
+                    <!-- Heart -->
+                    <li>
+                        <div class="flex items-center space-x-1 rounded-[50px] bg-[#41ff6b1a] p-2">
+                            <span class="font-semibold">0</span>
+                            <img src="./assets/heart.png" alt="" class="w-7">
+                        </div>
+                    </li>
+                    <!-- Coin -->
+                    <li>
+                        <div class="flex items-center space-x-1 rounded-[50px] bg-[#41ff6b1a] p-2">
+                            <span class="font-semibold">100</span>
+                            <img src="./assets/coin.png" alt="" class="w-7">
+                        </div>
+                    </li>
+                    <!-- Copy Count -->
+                    <li><button class=" btn px-9 py-3 bg-[#00a63e] rounded-[50px] text-white"> <span>0</span> Copy</button></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+</body>
+</html>

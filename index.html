@@ -17,9 +17,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header class="container mx-auto">
+    <header class="bg-white/90 shadow-2xl">
         <!-- Navbar -->
-        <div class="navbar bg-white/90 shadow-2xl">
+        <div class="navbar container mx-auto">
             <!-- Left: Logo & Name -->
             <div class="flex-1">
                 <a class="flex items-center space-x-2">
@@ -55,7 +55,7 @@
                 <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /> </svg>
                 </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box w-52">
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box w-52 space-y-2">
                     <!-- Heart -->
                     <li>
                         <div class="flex items-center space-x-1 rounded-[50px] bg-[#41ff6b1a] p-2">
@@ -76,6 +76,20 @@
             </div>
         </div>
     </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-r from-[#013122] via-[#006747] to-[#013223] text-white py-3 md:py-12 lg:py-16 px-4 sm:px-6 md:px-14 lg:px-20 text-center">
+            <!-- Logo -->
+            <div class="flex justify-center mt-5 mb-3 md:mb-6">
+                <img src="./assets/logo-dark.png" alt="National logo" class="w-20 sm:w-24 md:w-28 lg:w-32">
+            </div>
 
+            <!-- Title -->
+            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-5 leading-tight">Emergency Service Directory</h1>
+
+            <!-- Slogan -->
+            <p class="text-sm sm:text-base md:text-xl lg:text-xl font-semibold max-w-7xl mx-auto px-2 pb-3">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+        </section>
+    </main>
 </body>
 </html>

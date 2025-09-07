@@ -34,7 +34,7 @@
                     <!-- Heart -->
                     <li>
                         <div class="flex items-center space-x-1 rounded-[50px] bg-[#41ff6b1a] p-2">
-                            <span class="font-semibold">0</span>
+                            <span id="heart-count-desktop" class="font-semibold">0</span>
                             <img src="./assets/heart.png" alt="" class="w-7">
                         </div>
                     </li>
@@ -58,14 +58,14 @@
                 <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box w-52 space-y-2">
                     <!-- Heart -->
                     <li>
-                        <div class="flex items-center space-x-1 rounded-[50px] bg-[#41ff6b1a] p-2">
-                            <span class="font-semibold">0</span>
+                        <div class="flex  justify-center items-center space-x-1 rounded-[50px] bg-[#41ff6b1a] p-2">
+                            <span id="heart-count-mobile" class="font-semibold">0</span>
                             <img src="./assets/heart.png" alt="" class="w-7">
                         </div>
                     </li>
                     <!-- Coin -->
                     <li>
-                        <div class="flex items-center space-x-1 rounded-[50px] bg-[#41ff6b1a] p-2">
+                        <div class="flex  justify-center items-center space-x-1 rounded-[50px] bg-[#41ff6b1a] p-2">
                             <span class="font-semibold">100</span>
                             <img src="./assets/coin.png" alt="" class="w-7">
                         </div>
@@ -127,7 +127,7 @@
                             <div class="w-14 h-14 flex justify-center items-center bg-[#FFE3E2] rounded-2xl">
                                 <img src="./assets/emergency.png" alt="Emergency icon" class="p-3">
                             </div>
-                            <button class="cursor-pointer">
+                            <button class="cursor-pointer heart-btn">
                                 <i class="fa-regular fa-heart text-gray-500 text-2xl"></i>
                             </button>
                         </div>
@@ -160,7 +160,7 @@
                             <div class="w-14 h-14 flex justify-center items-center bg-blue-100 rounded-2xl">
                                 <img src="./assets/police.png" alt="Emergency icon" class="p-3">
                             </div>
-                            <button class="cursor-pointer">
+                            <button class="cursor-pointer heart-btn">
                                 <i class="fa-regular fa-heart text-gray-500 text-2xl"></i>
                             </button>
                         </div>
@@ -193,7 +193,7 @@
                             <div class="w-14 h-14 flex justify-center items-center bg-[#FFE3E2] rounded-2xl">
                                 <img src="./assets/fire-service.png" alt="Emergency icon" class="p-3">
                             </div>
-                            <button class="cursor-pointer">
+                            <button class="cursor-pointer heart-btn">
                                 <i class="fa-regular fa-heart text-gray-500 text-2xl"></i>
                             </button>
                         </div>
@@ -226,7 +226,7 @@
                             <div class="w-14 h-14 flex justify-center items-center bg-[#FFE3E2] rounded-2xl">
                                 <img src="./assets/fire-service.png" alt="Emergency icon" class="p-3">
                             </div>
-                            <button class="cursor-pointer">
+                            <button class="cursor-pointer heart-btn">
                                 <i class="fa-regular fa-heart text-gray-500 text-2xl"></i>
                             </button>
                         </div>
@@ -259,7 +259,7 @@
                             <div class="w-14 h-14 flex justify-center items-center bg-[#FFE3E2] rounded-2xl">
                                 <img src="./assets/emergency.png" alt="Emergency icon" class="p-3">
                             </div>
-                            <button class="cursor-pointer">
+                            <button class="cursor-pointer heart-btn">
                                 <i class="fa-regular fa-heart text-gray-500 text-2xl"></i>
                             </button>
                         </div>
@@ -292,7 +292,7 @@
                             <div class="w-14 h-14 flex justify-center items-center bg-[#FFE3E2] rounded-2xl">
                                 <img src="./assets/emergency.png" alt="Emergency icon" class="p-3">
                             </div>
-                            <button class="cursor-pointer">
+                            <button class="cursor-pointer heart-btn">
                                 <i class="fa-regular fa-heart text-gray-500 text-2xl"></i>
                             </button>
                         </div>
@@ -325,7 +325,7 @@
                             <div class="w-14 h-14 flex justify-center items-center bg-[#FFE3E2] rounded-2xl">
                                 <img src="./assets/emergency.png" alt="Emergency icon" class="p-3">
                             </div>
-                            <button class="cursor-pointer">
+                            <button class="cursor-pointer heart-btn">
                                 <i class="fa-regular fa-heart text-gray-500 text-2xl"></i>
                             </button>
                         </div>
@@ -358,7 +358,7 @@
                             <div class="w-14 h-14 flex justify-center items-center bg-[#FFE3E2] rounded-2xl">
                                 <img src="./assets/brac.png" alt="Emergency icon" class="p-3">
                             </div>
-                            <button class="cursor-pointer">
+                            <button class="cursor-pointer heart-btn">
                                 <i class="fa-regular fa-heart text-gray-500 text-2xl"></i>
                             </button>
                         </div>
@@ -391,7 +391,7 @@
                             <div class="w-14 h-14 flex justify-center items-center bg-[#FFE3E2] rounded-2xl">
                                 <img src="./assets/Bangladesh-Railway.png" alt="Bangladesh Railway icon" class="p-3">
                             </div>
-                            <button class="cursor-pointer">
+                            <button class="cursor-pointer heart-btn">
                                 <i class="fa-regular fa-heart text-gray-500 text-2xl"></i>
                             </button>
                         </div>
@@ -420,5 +420,7 @@
             </div>
         </section>
     </main>
+
+    <script src="./script.js"></script>
 </body>
 </html>

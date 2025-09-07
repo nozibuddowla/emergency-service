@@ -19,7 +19,7 @@
 <body>
     <header class="bg-white/90 shadow-2xl">
         <!-- Navbar -->
-        <div class="navbar container mx-auto">
+        <div class="navbar container mx-auto px-4 sm:px-6">
             <!-- Left: Logo & Name -->
             <div class="flex-1">
                 <a class="flex items-center space-x-2">
@@ -93,10 +93,33 @@
     <main>
         <!-- Main Section -->
         <section class="bg-[#f5fff6] py-10 px-6 md:px-14 lg:px-20">
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                <!-- Card Section (3 columns span) -->
-                <div class="col-span-1 md:col-span-2 lg:col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+                <!-- History Section -->
+                <div class="order-1 md:order-2 col-span-1 sm:col-span-2 md:col-span-1 bg-white shadow-md rounded-2xl p-5 h-full">
+                    <!-- Title -->
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="flex items-center space-x-2">
+                            <i class="fa-regular fa-clock text-2xl"></i>
+                            <span class="text-[#111111] text-xl font-medium leading-7">Call History</span>
+                        </h3>
+                        <button class="btn px-9 py-4 text-white rounded-[50px] bg-[#00A63E]">Clear</button>
+                    </div>
+
+                    <!-- History List -->
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex justify-between items-center bg-[#FAFAFA] p-4 rounded-lg">
+                            <div>
+                                <h3 class="font-semibold text-lg">Fire Service Number</h3>
+                                <p class="text-lg text-[#5C5C5C]">999</p>
+                            </div>
+                            <span class="text-[#111111] text-lg">12:54:18 PM</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card Section -->
+                <div class="order-2 md:order-1 col-span-1 sm:col-span-2 md:col-span-1 lg:col-span-2 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 sm:gap-7">
                     <!-- Card 1 -->
                     <div class="card bg-white shadow-md rounded-2xl p-5">
                         <!-- Icon + Heart -->
@@ -393,29 +416,6 @@
                             </button>
                         </div>
                     </div>
-                </div>
-
-                <!-- History Section -->
-                <div class="bg-white shadow-md rounded-2xl p-5 h-full">
-                    <!-- Title -->
-                    <div class="flex justify-between items-center mb-4">
-                        <h3 class="flex items-center space-x-2">
-                            <i class="fa-regular fa-clock text-2xl"></i>
-                            <span class="text-[#111111] text-xl font-medium leading-7">Call History</span>
-                        </h3>
-                        <button class="btn px-9 py-4 text-white rounded-[50px] bg-[#00A63E]">Clear</button>
-                    </div>
-
-                    <!-- History List -->
-                    <ul class="space-y-3 text-sm">
-                        <li class="flex justify-between items-center bg-[#FAFAFA] p-4 rounded-lg">
-                            <div>
-                                <h3 class="font-semibold text-lg">Fire Service Number</h3>
-                                <p class="text-lg text-[#5C5C5C]">999</p>
-                            </div>
-                            <span class="text-[#111111] text-lg">12:54:18 PM</span>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </section>

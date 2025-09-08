@@ -13,6 +13,9 @@ let coinDisplaysMobile = document.getElementById("coins-mobile");
 const cardContainer = document.querySelector(".card-container");
 const callHistoryList = document.getElementById("call-history");
 
+// clear button
+let clearButton = document.getElementById("clear-btn");
+
 for (const heartBtn of heartButtons) {
     heartBtn.addEventListener("click", function () {
         count++;
@@ -59,4 +62,9 @@ cardContainer.addEventListener("click", function (event) {
         </div>
     `;
     callHistoryList.appendChild(historyList);
+})
+
+// clear call history
+clearButton.addEventListener("click", function () {
+    callHistoryList.innerHTML = "";
 })

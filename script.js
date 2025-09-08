@@ -49,8 +49,10 @@ for (const heartBtn of heartButtons) {
 }
 
 /* ---------------- Reusable Functions ---------------- */
-function updateCoins(newCoins) {
-    coins = newCoins;
+function updateCoins(amount) {
+    coins = coins - amount;
+
+    // update UI
     coinDisplaysDesktop.innerText = coins;
     coinDisplaysMobile.innerText = coins;
 }
@@ -98,7 +100,7 @@ cardContainer.addEventListener("click", function (event) {
             return;
         }
 
-        updateCoins(coins - 20);
+        updateCoins(20);
         
         alert(`Calling ${serviceName} at ${serviceNumber}`);
         addToHistory(serviceName, serviceNumber);
